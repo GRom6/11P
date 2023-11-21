@@ -1,4 +1,3 @@
-# 2594 23:10
 from  math import sqrt
 # def All_del(n):
 #     res = []
