@@ -1,0 +1,1 @@
+print("15, a = -14, b = -20, on paper")
