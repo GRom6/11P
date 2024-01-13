@@ -7,6 +7,13 @@ for FirstPart in PartNumb:
     for SecondPart in PartNumb:
         if SecondPart != FirstPart:
             if sum(FirstPart) == sum(SecondPart):
-                if any(FirstPart) == any(SecondPart):
+                
+                for NumbF in FirstPart:
+                    for NumbS in SecondPart:
+                        if NumbF == NumbS:
+                            break
+                    else:
+                        continue
                     CounterxD += 1
+                    break
 print(CounterxD)

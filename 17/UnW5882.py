@@ -8,9 +8,8 @@ for i in range(len(arr) - 1):
         min_el = min(min_el, arr[i + 1], arr[i])
         print(min_el, arr[i + 1], arr[i])
 
-print(min_el)
+
 min_el = sum(list(map(lambda x: int(x)**2, list(str(abs(min_el))))))
 
-print(min_el)
 End3 = list(filter(lambda x: int(x) >= min_el, End3))
 print(len(End3), min(End3))
