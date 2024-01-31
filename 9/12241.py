@@ -1,4 +1,4 @@
-Array = [list(map(int, line.split())) for line in open("12241.txt")]
+Array = [list(map(int, line.split())) for line in open("9/12241.txt")]
 res = []
 
 for line in Array:

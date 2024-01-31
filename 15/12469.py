@@ -1,16 +1,18 @@
+D = range(7, 68 + 1)
+C = range(29, 100 + 1)
 res = []
-D = range(7, 69)
-C = range(29, 101)
 
-for Ast in range(101):
-    for Aend in range(Ast, 1000):
-        A = range(Ast, Aend)
-        for x in range(120):
-            if (((x in D) <= ((not x in C) and (not x in A))) <= (not x in D)):
-                pass
-            else:
+for StartA in range(1000):
+    for EndA in range(StartA - 1, 1100):
+        A =  range(StartA, EndA + 1)
+        
+        for x in range(1000):
+            if not ((x in D) <= (((not x in C) and (not x in A)) <= (not x in D))):
                 break
         else:
-            res.append(len(list(A)))
+            res.append(len(A))
+        
 
 print(min(res))
+
+
