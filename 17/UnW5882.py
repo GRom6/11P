@@ -8,10 +8,7 @@ for i in range(len(arr) - 1):
     if E3(arr[i]) != E3(arr[i + 1]):
         min_el = min(min_el, arr[i + 1], arr[i])
 
-print(min_el)
 min_el = sum(map(lambda x: int(x)**2, str(abs(min_el))))
-
-print(min_el)
 
 End3 = list(filter(lambda x: int(x) >= min_el, End3))
 

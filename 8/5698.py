@@ -8,10 +8,15 @@ def MyAny(List1, List2):
         for
 for FirstPart in PartNumb:
     for SecondPart in PartNumb:
-        if sum(FirstPart) == sum(SecondPart):
-            if FirstPart != SecondPart:
-                if any(FirstPart) == any(SecondPart):
+        if SecondPart != FirstPart:
+            if sum(FirstPart) == sum(SecondPart):
+                
+                for NumbF in FirstPart:
+                    for NumbS in SecondPart:
+                        if NumbF == NumbS:
+                            break
+                    else:
+                        continue
                     CounterxD += 1
-                    if FirstPart == (1, 5, 6) and SecondPart == (6, 2, 4):
-                        print('True')
+                    break
 print(CounterxD)
